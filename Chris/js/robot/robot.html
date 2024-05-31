@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrôle du robot</title>
+    <style>
+        /* Ajoutez du style CSS pour disposer les boutons */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        button {
+            margin: 10px;
+        }
+        .button-row {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <button id="avant">Avant</button>
+    <div class="button-row">
+        <button id="gauche">Gauche</button>
+        <button id="droite">Droite</button>
+    </div>
+    <button id="arrière">Arrière</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

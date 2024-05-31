@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>Before the script...</p>
+
+  <script>
+    "use strict"
+    // import {sayHi} from './sayHi.js';
+
+    // alert(sayHi); // function...
+    // sayHi('John'); // Hello, John!
+
+    // une variable encapsulée
+    alert( `Hello, ${name}!` ); // Hello, John!
+
+    // une expression encapsulée
+    alert( `the result is ${1 + 2}` ); // le résultat est 3
+
+    alert(window.innerHeight); // hauteur de la fenêtre intérieure
+
+    // change la couleur de fond en rouge
+    document.body.style.background = "red";
+
+    // réinitialisation après 1 seconde
+    setTimeout(() => document.body.style.background = "", 1000);
+
+    const image = document.createElement("img");
+    image.src = "Madeira-71.jpg";
+    document.body.appendChild(image);
+
+    // 📁 main.js
+  </script>
+
+  <p>...After the script.</p>
+
+</body>
+
+</html>
