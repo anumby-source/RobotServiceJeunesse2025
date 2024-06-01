@@ -14,8 +14,14 @@
 
 
 // Récupérez les références des boutons
-const boutonHaut = document.getElementById("Haut");
-const boutonBas = document.getElementById("Bas");
+const boutonStart = document.getElementById("start");
+const boutonStop = document.getElementById("stop");
+
+const boutonPlus = document.getElementById("plus");
+const boutonMoins = document.getElementById("moins");
+
+const boutonHaut = document.getElementById("haut");
+const boutonBas = document.getElementById("bas");
 const boutonDroite = document.getElementById("droite");
 const boutonGauche = document.getElementById("gauche");
 
@@ -94,11 +100,19 @@ boutonHaut.addEventListener("click", () => {
     console.log(`Robot va vers le haut. Nouvelle position : (${robot.x}, ${robot.y})`);
 });
 
-moins.addEventListener("click", () => {
+boutonStart.addEventListener("click", () => {
+  vitesse = 1;
+});
+
+boutonStop.addEventListener("click", () => {
+  vitesse = 0;
+});
+
+boutonMoins.addEventListener("click", () => {
   vitesse /= 2;
 });
 
-plus.addEventListener("click", () => {
+boutonPlus.addEventListener("click", () => {
   vitesse *= 2;
 });
 
