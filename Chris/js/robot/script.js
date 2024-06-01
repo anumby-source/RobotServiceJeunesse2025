@@ -14,28 +14,55 @@
 
 
 // Récupérez les références des boutons
-const boutonAvant = document.getElementById("Avant");
-const boutonArrière = document.getElementById("Arrière");
+const boutonHaut = document.getElementById("Haut");
+const boutonBas = document.getElementById("Bas");
 const boutonDroite = document.getElementById("droite");
 const boutonGauche = document.getElementById("gauche");
 
+let robot = {
+    x: 100,
+    y: 100,
+    r: 30,
+    direction: "haut"
+};
+
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
+drawRobot();
+
+function drawRobot() {
+    // Dessinez la tête
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    ctx.beginPath();
+    ctx.moveTo(0, 0);
+    ctx.arc(robot.x, robot.y, robot.r, 0, 2 * Math.PI);
+    ctx.fillStyle = "blue";
+    ctx.fill();
+};
+
 // Ajoutez des écouteurs d'événements pour chaque bouton
-boutonAvant.addEventListener("click", () => {
-    // Code pour déplacer le robot vers l'e 'Avant
-    console.log("Robot va vers l'e 'Avant");
+boutonHaut.addEventListener("click", () => {
+    robot.y -= 10;
+    drawRobot();
+    console.log(`Robot va vers le haut. Nouvelle position : (${robot.x}, ${robot.y})`);
 });
 
-boutonArrière.addEventListener("click", () => {
-    // Code pour déplacer le robot vers l'Arrière
-    console.log("Robot va vers l'Arrière");
+boutonBas.addEventListener("click", () => {
+    robot.y += 10;
+    drawRobot();
+    console.log(`Robot va vers le bas. Nouvelle position : (${robot.x}, ${robot.y})`);
 });
 
 boutonDroite.addEventListener("click", () => {
-    // Code pour déplacer le robot vers la droite
-    console.log("Robot va vers la droite");
+    robot.x += 10;
+    drawRobot();
+    console.log(`Robot va vers la droite. Nouvelle position : (${robot.x}, ${robot.y})`);
 });
 
 boutonGauche.addEventListener("click", () => {
-    // Code pour déplacer le robot vers la gauche
-    console.log("Robot va vers la gauche");
+    robot.x -= 10;
+    drawRobot();
+    console.log(`Robot va vers la gauche. Nouvelle position : (${robot.x}, ${robot.y})`);
 });
+
