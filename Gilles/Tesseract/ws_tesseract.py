@@ -1,7 +1,7 @@
 ###################################################################
 #
-#   Test ESP32-cam video streaming via websockets with javascript
-#   Works with index.html
+#   ESP32-cam video streaming via websockets with javascript
+#   Works with tesseract.html
 #
 ###################################################################
 
