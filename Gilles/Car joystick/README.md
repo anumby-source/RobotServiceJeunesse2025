@@ -5,5 +5,5 @@ https://github.com/anumby-source/RobotServiceJeunesse2025/assets/48280441/6db32c
 
 ## Schema electrique
 <p align="center">
-  <img src="./car joystick- schema electrique.svg" width="600">
+  <img src="./car joystick- schema electrique.svg" width="1000">
 <p/>
