@@ -4,6 +4,10 @@
 	(generator_version "8.0")
 	(uuid "ab98311e-35c0-4881-9c9d-9030b192b32c")
 	(paper "A4")
+	(title_block
+		(title "Joystick")
+		(date "2025-01-30")
+	)
 	(lib_symbols
 		(symbol "Anumby:Joystick"
 			(exclude_from_sim no)
@@ -223,6 +227,143 @@
 				)
 			)
 		)
+		(symbol "Anumby:Trimmer"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "RV"
+				(at -0.254 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Trim"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "resistor variable trimpot trimmer"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Potentiometer*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Trimmer_0_1"
+				(rectangle
+					(start -2.54 1.27)
+					(end 2.54 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "Trimmer_1_1"
+				(pin input line
+					(at -3.81 0 0)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 0 -2.54 90)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Connector:Conn_01x02_Socket"
 			(pin_names
 				(offset 1.016) hide)
@@ -376,167 +517,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Device:R_Potentiometer_Trim"
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "RV"
-				(at -4.445 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R_Potentiometer_Trim"
-				(at -2.54 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Trim-potentiometer"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "resistor variable trimpot trimmer"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Potentiometer*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_Potentiometer_Trim_0_1"
-				(polyline
-					(pts
-						(xy 1.524 0.762) (xy 1.524 -0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 1.524 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 1.016 2.54)
-					(end -1.016 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_Potentiometer_Trim_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 1.27)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1119,44 +1099,44 @@
 		)
 	)
 	(no_connect
-		(at 99.06 74.93)
+		(at 130.81 104.14)
 		(uuid "01d950a6-9fd7-4725-94f7-9c1d81130a0d")
 	)
 	(no_connect
-		(at 99.06 77.47)
+		(at 130.81 106.68)
 		(uuid "135411a9-ef64-46ca-b027-454df747b75b")
 	)
 	(no_connect
-		(at 99.06 72.39)
+		(at 130.81 101.6)
 		(uuid "3217c749-531a-46b2-915d-3aa7d14e45e9")
 	)
 	(no_connect
-		(at 63.5 77.47)
+		(at 95.25 106.68)
 		(uuid "5766ff41-d7aa-499d-9dc1-f061ce3da8ce")
 	)
 	(no_connect
-		(at 99.06 82.55)
+		(at 130.81 111.76)
 		(uuid "611423b6-baaf-4985-a274-4317c7ad7793")
 	)
 	(no_connect
-		(at 63.5 82.55)
+		(at 95.25 111.76)
 		(uuid "66c4e711-81f6-4da6-8ef6-c91fd125f6a4")
 	)
 	(no_connect
-		(at 99.06 69.85)
+		(at 130.81 99.06)
 		(uuid "74cc0ce4-cc81-4d9d-8c19-1976d99688af")
 	)
 	(no_connect
-		(at 63.5 85.09)
+		(at 95.25 114.3)
 		(uuid "808cf86a-49a6-48bc-9ffe-34e092014468")
 	)
 	(no_connect
-		(at 99.06 80.01)
+		(at 130.81 109.22)
 		(uuid "bb60df68-428e-4538-ac05-1908743ba0f2")
 	)
 	(wire
 		(pts
-			(xy 57.15 80.01) (xy 63.5 80.01)
+			(xy 88.9 109.22) (xy 95.25 109.22)
 		)
 		(stroke
 			(width 0)
@@ -1166,7 +1146,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 90.17) (xy 102.87 90.17)
+			(xy 130.81 119.38) (xy 134.62 119.38)
 		)
 		(stroke
 			(width 0)
@@ -1176,7 +1156,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 53.34) (xy 104.14 62.23)
+			(xy 135.89 82.55) (xy 135.89 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1186,7 +1166,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 62.23) (xy 104.14 62.23)
+			(xy 130.81 91.44) (xy 135.89 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1196,7 +1176,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 53.34) (xy 106.68 54.61)
+			(xy 138.43 82.55) (xy 138.43 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1205,7 +1185,7 @@
 		(uuid "af58b459-0bf7-460a-afc1-3b8ed5e6e201")
 	)
 	(label "3V3"
-		(at 99.06 64.77 0)
+		(at 130.81 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1216,7 +1196,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 57.15 80.01 270)
+		(at 88.9 109.22 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1225,7 +1205,7 @@
 		(fields_autoplaced yes)
 		(uuid "06de6a2c-ef47-4565-9354-53f2270eb5e2")
 		(property "Reference" "#PWR03"
-			(at 50.8 80.01 0)
+			(at 82.55 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1234,7 +1214,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 53.34 80.0099 90)
+			(at 85.09 109.2199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1243,7 +1223,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 57.15 80.01 0)
+			(at 88.9 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1252,7 +1232,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 57.15 80.01 0)
+			(at 88.9 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1261,7 +1241,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 57.15 80.01 0)
+			(at 88.9 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1282,25 +1262,25 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Potentiometer_Trim")
-		(at 167.64 87.63 270)
+		(lib_id "Anumby:Trimmer")
+		(at 195.58 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "1fb1e54e-96e4-4e55-b064-723504db6c6c")
-		(property "Reference" "RV2"
-			(at 167.64 81.28 90)
+		(uuid "17c9d778-1025-4b7e-ad3a-e0ec0a1ad577")
+		(property "Reference" "RV1"
+			(at 195.58 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "R_Potentiometer_Trim"
-			(at 167.64 83.82 90)
+		(property "Value" "Trim"
+			(at 195.58 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1308,7 +1288,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 167.64 87.63 0)
+			(at 195.58 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1316,8 +1296,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 167.64 87.63 0)
+		(property "Datasheet" ""
+			(at 195.58 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1325,8 +1305,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Trim-potentiometer"
-			(at 167.64 87.63 0)
+		(property "Description" ""
+			(at 195.58 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1335,13 +1315,84 @@
 			)
 		)
 		(pin "3"
-			(uuid "fb3631aa-3b5d-4fbb-8f67-c188828df5ca")
-		)
-		(pin "1"
-			(uuid "3439a993-d618-4e48-8ddc-e212532a52b8")
+			(uuid "e6b63f3b-9fe9-4c13-ad90-657ea85699a1")
 		)
 		(pin "2"
-			(uuid "4249eb36-07eb-4ef6-a984-adc60ef6750c")
+			(uuid "2f73e7e5-66ed-4fa6-bde5-36a6bccbf77f")
+		)
+		(pin "1"
+			(uuid "173469cc-e1dc-4d72-8091-25b41fa25f6b")
+		)
+		(instances
+			(project ""
+				(path "/ab98311e-35c0-4881-9c9d-9030b192b32c"
+					(reference "RV1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Anumby:Trimmer")
+		(at 196.85 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "28115f93-42e8-4780-a49f-0662766c4ca4")
+		(property "Reference" "RV2"
+			(at 196.85 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Trim"
+			(at 196.85 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 196.85 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 196.85 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 196.85 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "ff4e3604-b53e-4503-a7e3-baa61b56394e")
+		)
+		(pin "2"
+			(uuid "91aba760-0e03-49a6-a6e1-823ba1c81e49")
+		)
+		(pin "1"
+			(uuid "ed44cf4b-3eb1-4082-a17c-e9b5d05b56cc")
 		)
 		(instances
 			(project "Télécommande"
@@ -1354,7 +1405,7 @@
 	)
 	(symbol
 		(lib_id "Anumby:Joystick")
-		(at 135.89 68.58 0)
+		(at 167.64 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1363,7 +1414,7 @@
 		(fields_autoplaced yes)
 		(uuid "33cc81d3-d0d5-4776-9864-981e33492c7e")
 		(property "Reference" "R1"
-			(at 139.7 66.04 0)
+			(at 171.45 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1371,7 +1422,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 139.7 68.58 0)
+			(at 171.45 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1379,7 +1430,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 135.89 68.58 0)
+			(at 167.64 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1388,7 +1439,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 135.89 68.58 0)
+			(at 167.64 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1397,7 +1448,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 135.89 68.58 0)
+			(at 167.64 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1439,79 +1490,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Potentiometer_Trim")
-		(at 166.37 60.96 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6c5e080e-759f-44a3-8cdd-8bcb2515a8d4")
-		(property "Reference" "RV1"
-			(at 166.37 54.61 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "R_Potentiometer_Trim"
-			(at 166.37 57.15 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 166.37 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 166.37 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Trim-potentiometer"
-			(at 166.37 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "3bc559f2-3cd6-40ca-bd4e-ae4b77590106")
-		)
-		(pin "1"
-			(uuid "bd389660-a55d-4b20-b01d-0f85288be7e0")
-		)
-		(pin "2"
-			(uuid "9c783205-76ea-454e-9838-f6f5a4359ec3")
-		)
-		(instances
-			(project ""
-				(path "/ab98311e-35c0-4881-9c9d-9030b192b32c"
-					(reference "RV1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PCM_ESP32-C3-SUPERMINI:ESP32-C3_SUPERMINI")
-		(at 81.28 74.93 0)
+		(at 113.03 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1520,7 +1500,7 @@
 		(fields_autoplaced yes)
 		(uuid "720c8644-2d2e-4c6d-a5a0-4358ef3096f3")
 		(property "Reference" "U1"
-			(at 81.28 54.61 0)
+			(at 113.03 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1528,7 +1508,7 @@
 			)
 		)
 		(property "Value" "ESP32-C3_SUPERMINI"
-			(at 81.28 57.15 0)
+			(at 113.03 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1536,7 +1516,7 @@
 			)
 		)
 		(property "Footprint" "ESP32-C3_SUPERMINI:MODULE_ESP32-C3_SUPERMINI"
-			(at 81.28 74.93 0)
+			(at 113.03 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1546,7 +1526,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 81.28 74.93 0)
+			(at 113.03 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1555,7 +1535,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 81.28 74.93 0)
+			(at 113.03 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1564,7 +1544,7 @@
 			)
 		)
 		(property "MF" "Espressif Systems"
-			(at 81.28 74.93 0)
+			(at 113.03 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1574,7 +1554,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "4.2mm"
-			(at 81.28 74.93 0)
+			(at 113.03 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1584,7 +1564,7 @@
 			)
 		)
 		(property "Package" "Package"
-			(at 81.28 74.93 0)
+			(at 113.03 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1594,7 +1574,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 81.28 74.93 0)
+			(at 113.03 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1604,7 +1584,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/ESP32-C3%20SuperMini/Espressif+Systems/view-part/?ref=eda"
-			(at 81.28 74.93 0)
+			(at 113.03 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1614,7 +1594,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendations"
-			(at 81.28 74.93 0)
+			(at 113.03 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1624,7 +1604,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 81.28 74.93 0)
+			(at 113.03 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1634,7 +1614,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/ESP32-C3%20SuperMini/Espressif+Systems/view-part/?ref=snap"
-			(at 81.28 74.93 0)
+			(at 113.03 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1644,7 +1624,7 @@
 			)
 		)
 		(property "MP" "ESP32-C3 SuperMini"
-			(at 81.28 74.93 0)
+			(at 113.03 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1654,7 +1634,7 @@
 			)
 		)
 		(property "Description_1" "\nSuper tiny ESP32-C3 board\n"
-			(at 81.28 74.93 0)
+			(at 113.03 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1664,7 +1644,7 @@
 			)
 		)
 		(property "Availability" "Not in stock"
-			(at 81.28 74.93 0)
+			(at 113.03 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1674,7 +1654,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Espressif"
-			(at 81.28 74.93 0)
+			(at 113.03 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1742,7 +1722,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 106.68 54.61 0)
+		(at 138.43 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1751,7 +1731,7 @@
 		(fields_autoplaced yes)
 		(uuid "7d6e8ef1-b6dc-48ba-bf9b-fd9740a27a89")
 		(property "Reference" "#PWR02"
-			(at 106.68 60.96 0)
+			(at 138.43 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1760,7 +1740,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 106.68 59.69 0)
+			(at 138.43 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1768,7 +1748,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 106.68 54.61 0)
+			(at 138.43 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1777,7 +1757,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 106.68 54.61 0)
+			(at 138.43 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1786,7 +1766,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 106.68 54.61 0)
+			(at 138.43 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1808,7 +1788,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 102.87 90.17 90)
+		(at 134.62 119.38 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1817,7 +1797,7 @@
 		(fields_autoplaced yes)
 		(uuid "c10a573e-787b-4c6d-9e3b-e00f7587a8e1")
 		(property "Reference" "#PWR01"
-			(at 109.22 90.17 0)
+			(at 140.97 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1826,7 +1806,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 106.68 90.1699 90)
+			(at 138.43 119.3799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1835,7 +1815,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 102.87 90.17 0)
+			(at 134.62 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1844,7 +1824,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 102.87 90.17 0)
+			(at 134.62 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1853,7 +1833,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 102.87 90.17 0)
+			(at 134.62 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1875,7 +1855,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Socket")
-		(at 104.14 48.26 90)
+		(at 135.89 77.47 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1884,7 +1864,7 @@
 		(fields_autoplaced yes)
 		(uuid "f70052c2-6b7e-49d5-b17b-04a9d25c11a9")
 		(property "Reference" "J1"
-			(at 107.95 47.6249 90)
+			(at 139.7 76.8349 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1893,7 +1873,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Socket"
-			(at 107.95 50.1649 90)
+			(at 139.7 79.3749 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1902,7 +1882,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 104.14 48.26 0)
+			(at 135.89 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1911,7 +1891,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 104.14 48.26 0)
+			(at 135.89 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1920,7 +1900,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 104.14 48.26 0)
+			(at 135.89 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
