@@ -1,4 +1,4 @@
-On a installé Kicad v8
+# On a installé Kicad v8
 
 Puis on ajoute la librairie expressif qui fournit entre autres, les composants Kicad associés au ESP32-C3
 
@@ -15,3 +15,19 @@ https://github.com/SurrealityLabs/esp32c3-wled
 Mise à jour de la librairie (installée dans le commit)
 
 "expressif-kicad-addon.zip"
+
+# Nos développements pour le projet RobotJeunesse
+
+Lors des développements effectués dans le cadre du Robot, j'ai été amenée à créer plusieurs éléments Kicad:
+- des symboles,
+- des empreintes associées
+
+Ces éléments sont installés dans deux librairies:
+
+1) https://github.com/anumby-source/RobotServiceJeunesse2025/blob/main/Vehicule/Kicad/Anumby.kicad_sym
+2) https://github.com/anumby-source/RobotServiceJeunesse2025/tree/main/Vehicule/Kicad/Empreintes.pretty
+
+Si vous souhaitez utiliser Kicad, pour développer dans le cadre de nos projets actuels, vous devrez importer ces librairies dans votre version de Kicad, ainsi les deux projets en cours seront modifiables:
+
+1) https://github.com/anumby-source/RobotServiceJeunesse2025/tree/main/Vehicule/Kicad/T%C3%A9l%C3%A9commande
+2) https://github.com/anumby-source/RobotServiceJeunesse2025/tree/main/Vehicule/Kicad/Robot
