@@ -2036,7 +2036,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Espressif:ESP32-C3-SUPERMINI"
+		(property "Footprint" "Anumby:ESP32-C3-SUPERMINI"
 			(at 81.28 72.39 0)
 			(effects
 				(font
@@ -2340,7 +2340,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Empreintes:CONN-2-PINS"
+		(property "Footprint" "Anumby:CONN-2-PINS"
 			(at 110.49 68.58 0)
 			(effects
 				(font
@@ -2473,7 +2473,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Empreintes:Joystick"
+		(property "Footprint" "Anumby:Joystick"
 			(at 115.57 81.28 0)
 			(effects
 				(font
