@@ -31,3 +31,7 @@ Si vous souhaitez utiliser Kicad, pour développer dans le cadre de nos projets 
 
 1) https://github.com/anumby-source/RobotServiceJeunesse2025/tree/main/Vehicule/Kicad/T%C3%A9l%C3%A9commande
 2) https://github.com/anumby-source/RobotServiceJeunesse2025/tree/main/Vehicule/Kicad/Robot
+
+[Outil 3D](https://circuitcellar.com/research-design-hub/basics-of-design/create-3d-models-of-components-and-board-outlines-in-kicad/)
+
+
