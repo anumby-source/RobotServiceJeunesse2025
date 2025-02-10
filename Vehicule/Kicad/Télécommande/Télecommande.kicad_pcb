@@ -1633,7 +1633,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
+		(property "Description" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1647,7 +1647,7 @@
 			)
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
-		(path "/08d3a871-0c52-4f7d-a83d-33d72b4d522b")
+		(path "/25351f3e-ff32-484a-8d8f-0ea704064c79")
 		(sheetname "Racine")
 		(sheetfile "Télecommande.kicad_sch")
 		(attr through_hole)
