@@ -3465,7 +3465,7 @@
 		(descr "CuK miniature slide switch, OS series, SPDT, https://www.ckswitches.com/media/1428/os.pdf")
 		(tags "switch SPDT")
 		(property "Reference" "SW1"
-			(at 3.99 -2.99 360)
+			(at 3.99 -2.99 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "38a51a97-50f6-4e40-a1f0-73794f343aa1")
@@ -3477,7 +3477,7 @@
 			)
 		)
 		(property "Value" "SW_DPDT_x2"
-			(at 2 3 360)
+			(at 2 3 0)
 			(layer "F.Fab")
 			(uuid "a2f69a73-b8f8-41f7-aa8e-d3a73eefd448")
 			(effects
@@ -3802,7 +3802,7 @@
 			(uuid "7758b83f-fda9-4f63-b6bc-59322a1a7749")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 3.99 -2.99 360)
+			(at 3.99 -2.99 0)
 			(layer "F.Fab")
 			(uuid "2a38d8f3-05a4-463d-9735-c80bfc399418")
 			(effects
@@ -3993,6 +3993,18 @@
 		(at 131.3 141.834314 90)
 		(layer "F.SilkS")
 		(uuid "b95a2264-099b-4d31-bc96-2b9134501022")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "ROBOT V1"
+		(at 91.1 113.934314 90)
+		(layer "F.SilkS")
+		(uuid "e1417e95-caad-47a1-acba-6107e75125bb")
 		(effects
 			(font
 				(size 1 1)

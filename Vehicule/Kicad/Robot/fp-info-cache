@@ -1,4 +1,4 @@
-24757274648553971
+24757275386427211
 Anumby
 CONN-1-PINS
 
@@ -36,13 +36,6 @@ ESP32-C3_SUPERMINI
 16
 Anumby
 JOYSTICK_MODEL_802
-
-
-0
-14
-14
-Anumby
-Joystick
 
 
 0
@@ -2610,6 +2603,13 @@ buzzer
 0
 2
 2
+Buzzer_Beeper
+DIP-16_296_ELL
+
+
+0
+16
+16
 Buzzer_Beeper
 Indicator_PUI_AI-1440-TWT-24V-2-R
 14mm Indicator, https://www.puiaudio.com/media/SpecSheet/AI-1440-TWT-24V-2-R.pdf
