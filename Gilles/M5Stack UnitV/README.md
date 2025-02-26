@@ -1,5 +1,7 @@
 # Reconnaissance de panneaux avec la carte M5Stack UnitV
 
+voir :     https://wiki.sipeed.com/soft/maixpy/en/course/ai/image/self_learn_classifier.html
+
 ### 1) Créer un compte sur MaixHub : 
     
     https://maixhub.com
@@ -30,10 +32,9 @@
 
 ### 5) Charger et exécuter le script : self_learning_classifier.py
    
-   https://github.com/sipeed/MaixPy-v1_scripts/tree/master/machine_vision/self_learning_classifier
+    https://github.com/sipeed/MaixPy-v1_scripts/tree/master/machine_vision/self_learning_classifier
 
 
-voir :
-https://wiki.sipeed.com/soft/maixpy/en/course/ai/image/self_learn_classifier.html
+
   
       
