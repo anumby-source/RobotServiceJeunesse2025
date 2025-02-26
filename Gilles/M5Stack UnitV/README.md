@@ -17,12 +17,15 @@
     https://dl.sipeed.com/MAIX/MaixPy/release/master/
    
    Il faut prendre la version minimum nue  ou avec IDE:
+   
       https://dl.sipeed.com/shareURL/MAIX/MaixPy/release/master/maixpy_v0.6.3_2_gd8901fd22
+   
    Puis flasher la carte avec kflash_gui
 
 ### 4) Télécharger le modèle sur MaixHub (utiliser le code machine récupéré au 1)) :
      
      https://maixhub.com/model/zoo/61
+   
    et le charger sur la carte à l'adresse 0X300000
 
 ### 5) Charger et exécuter le script : self_learning_classifier.py
