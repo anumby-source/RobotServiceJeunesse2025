@@ -10,7 +10,7 @@ voir https://wiki.sipeed.com/soft/maixpy/en/course/ai/image/self_learn_classifie
 
 ## 2) Récupération du code machine (code spécifique à chaque carte, nécessaire pour télécharger le modèle):
    
-   voir https://maixhub.com/share/6
+   voir    https://maixhub.com/share/6
    - se logger sur le site
    - télécharger key.gen.bin (https://dl.sipeed.com/shareURL/MaixHub_Tools) et le flasher avec 
      kflash_gui sur la Maix Bit à l'adresse 0X000000
