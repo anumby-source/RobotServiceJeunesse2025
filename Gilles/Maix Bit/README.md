@@ -12,7 +12,7 @@ voir https://wiki.sipeed.com/soft/maixpy/en/course/ai/image/self_learn_classifie
    
    voir    https://maixhub.com/share/6
    - se logger sur le site
-   - télécharger key.gen.bin (https://dl.sipeed.com/shareURL/MaixHub_Tools) et le flasher avec 
+   - télécharger _key.gen.bin_ (https://dl.sipeed.com/shareURL/MaixHub_Tools) et le flasher avec 
      kflash_gui sur la Maix Bit à l'adresse 0X000000
    - lancer un terminal (screen, putty, …) et rebooter la carte. Le code apparait dans la fenêtre.
 
