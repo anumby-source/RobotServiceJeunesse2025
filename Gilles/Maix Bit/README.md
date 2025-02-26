@@ -6,7 +6,7 @@ voir https://wiki.sipeed.com/soft/maixpy/en/course/ai/image/self_learn_classifie
 
 ## 1) Créer un compte sur le site maixhub : 
 
-  https://maixhub.com
+   https://maixhub.com
 
 ## 2) Récupération du code machine (code spécifique à chaque carte, nécessaire pour télécharger le modèle):
    
