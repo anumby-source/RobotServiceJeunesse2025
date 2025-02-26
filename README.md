@@ -13,6 +13,8 @@ Ultérieurement, lorsque l'on aura sélectionné les choix de design et de techn
 On peut démarrer cette série de tuto Youtube en mode "très débutant". Un peu lent mais clair. 1, 2, 3, 4, ...
 
 * [Fusion 360 Complet Débutant](https://www.youtube.com/watch?v=3kL6a9yyus8&list=PL0qHSH9_1qY5kvUzO7SlggBShYAllfP7j&index=4)
+* [4](https://www.youtube.com/watch?v=3kL6a9yyus8&list=PL0qHSH9_1qY5kvUzO7SlggBShYAllfP7j&index=4)
+* 
   
 .
 
