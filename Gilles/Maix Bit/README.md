@@ -16,7 +16,9 @@ voir https://wiki.sipeed.com/soft/maixpy/en/course/ai/image/self_learn_classifie
      kflash_gui sur la Maix Bit à l'adresse 0X000000
    - lancer un terminal (screen, putty, …) et rebooter la carte. Le code apparait dans la fenêtre.
 
-## 3) Télécharger le firmware : https://dl.sipeed.com/MAIX/MaixPy/release/master/
+## 3) Télécharger le firmware : 
+
+     https://dl.sipeed.com/MAIX/MaixPy/release/master/
    
    Il faut prendre la version minimum nue ou avec IDE:
       https://dl.sipeed.com/shareURL/MAIX/MaixPy/release/master/maixpy_v0.6.3_2_gd8901fd22
