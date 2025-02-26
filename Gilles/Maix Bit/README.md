@@ -4,11 +4,11 @@ On utilise le _self_learning_classifier_ de MaixPy :
 
 voir https://wiki.sipeed.com/soft/maixpy/en/course/ai/image/self_learn_classifier.html
 
-## 1) Créer un compte sur le site maixhub : 
+### 1) Créer un compte sur le site maixhub : 
 
      https://maixhub.com
 
-## 2) Récupération du code machine (code spécifique à chaque carte, nécessaire pour télécharger le modèle):
+### 2) Récupération du code machine (code spécifique à chaque carte, nécessaire pour télécharger le modèle):
    
    voir    https://maixhub.com/share/6
    - se logger sur le site
@@ -16,7 +16,7 @@ voir https://wiki.sipeed.com/soft/maixpy/en/course/ai/image/self_learn_classifie
      kflash_gui sur la Maix Bit à l'adresse 0X000000
    - lancer un terminal (screen, putty, …) et rebooter la carte. Le code apparait dans la fenêtre.
 
-## 3) Télécharger le firmware : 
+### 3) Télécharger le firmware : 
 
      https://dl.sipeed.com/MAIX/MaixPy/release/master/
    
@@ -26,12 +26,12 @@ voir https://wiki.sipeed.com/soft/maixpy/en/course/ai/image/self_learn_classifie
    
    Puis flasher la carte
 
-## 4) Télécharger le modèle sur MaixHub (utiliser le code machine récupéré au 1)) :
+### 4) Télécharger le modèle sur MaixHub (utiliser le code machine récupéré au 1)) :
      
      https://maixhub.com/model/zoo/61
    et le charger sur la carte à l'adresse 0X300000
 
-## 5) Charger et exécuter le script : self_learning_classifier.py
+### 5) Charger et exécuter le script : self_learning_classifier.py
    
    (https://github.com/sipeed/MaixPy-v1_scripts/tree/master/machine_vision/self_learning_classifier)
   
