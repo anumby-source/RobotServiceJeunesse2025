@@ -1,6 +1,8 @@
 # Reconnaissance de paneaux de signalisation avec la carte Maix Bit
 
-On utilise le _self_learning_classifier_ de MaixPy : voir 
+On utilise le _self_learning_classifier_ de MaixPy : 
+
+voir https://wiki.sipeed.com/soft/maixpy/en/course/ai/image/self_learn_classifier.html
 
 ## 1) Créer un compte sur le site maixhub : https://maixhub.com
 
