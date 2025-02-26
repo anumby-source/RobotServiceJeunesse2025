@@ -7,7 +7,7 @@ from board import board_info
 from machine import UART
 
 ############### config #################
-saved_path = "3_classes.classifier"
+saved_path = "trafic_v0.classifier"
 THRESHOLD = 15
 class_names = ['stop', 'sens interdit', 'depass. interdit']
 ########################################
