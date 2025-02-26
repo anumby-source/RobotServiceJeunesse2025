@@ -12,7 +12,9 @@
      kflash_gui sur la carte UnitV à l'adresse 0X000000
    - lancer un terminal (screen, putty, …) et rebooter la carte. Le code apparait dans la fenêtre.
 
-### 3) Télécharger le firmware : https://dl.sipeed.com/MAIX/MaixPy/release/master/
+### 3) Télécharger le firmware : 
+
+    https://dl.sipeed.com/MAIX/MaixPy/release/master/
    
    Il faut prendre la version minimum nue  ou avec IDE:
       https://dl.sipeed.com/shareURL/MAIX/MaixPy/release/master/maixpy_v0.6.3_2_gd8901fd22
@@ -25,7 +27,7 @@
 
 ### 5) Charger et exécuter le script : self_learning_classifier.py
    
-   (https://github.com/sipeed/MaixPy-v1_scripts/tree/master/machine_vision/self_learning_classifier)
+   https://github.com/sipeed/MaixPy-v1_scripts/tree/master/machine_vision/self_learning_classifier
 
 
 voir :
