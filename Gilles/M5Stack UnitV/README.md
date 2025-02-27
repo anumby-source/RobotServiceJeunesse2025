@@ -6,7 +6,7 @@ voir :     https://wiki.sipeed.com/soft/maixpy/en/course/ai/image/self_learn_cla
     
     https://maixhub.com
 
-### 2) Récupération du code machine (nécessaire pour télécharger le modèle):
+### 2) Récupération du code machine du module M5Stack UnitV (nécessaire pour télécharger le modèle):
    
    voir https://maixhub.com/share/6
    - se logger sur le site MaixHub
