@@ -18,7 +18,7 @@ voir :     https://wiki.sipeed.com/soft/maixpy/en/course/ai/image/self_learn_cla
 
 Flasher le firmrware (fichier _M5StickV_Firmware_v5.1.2.kfpkg_) avec kflash_gui
 
-### 4) Télécharger le modèle sur MaixHub (utiliser le code machine récupéré au 1)) :
+### 4) Télécharger le modèle sur MaixHub (utiliser le code machine récupéré au 2) ) :
      
      https://maixhub.com/model/zoo/61
    
