@@ -25,6 +25,7 @@ Flasher le firmrware (fichier _M5StickV_Firmware_v5.1.2.kfpkg_) avec kflash_gui
      https://maixhub.com/model/zoo/61
    
 et le charger sur la carte avec kflash_gui à l'adresse 0X300000
+
 ![Flash kmodel](https://github.com/user-attachments/assets/df5b09c9-7f6f-418e-9d61-fabbc00d21bd)
 
 ### 5) Sur une carte micro-SD, charger _3_panneaux.classifier_ et _classify.py_
