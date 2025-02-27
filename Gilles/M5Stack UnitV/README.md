@@ -14,27 +14,17 @@ voir :     https://wiki.sipeed.com/soft/maixpy/en/course/ai/image/self_learn_cla
      kflash_gui sur la carte UnitV à l'adresse 0X000000
    - lancer un terminal (screen, putty, …) et rebooter la carte. Le code apparait dans la fenêtre.
 
-### 3) Télécharger le firmware : 
+### 3) Installer le firmware : 
 
-    https://dl.sipeed.com/MAIX/MaixPy/release/master/
-   
-   Il faut prendre la version minimum nue  ou avec IDE:
-   
-      https://dl.sipeed.com/shareURL/MAIX/MaixPy/release/master/maixpy_v0.6.3_2_gd8901fd22
-   
-   Puis flasher la carte avec kflash_gui
+    Flasher le firmrware (fichier _M5StickV_Firmware_v5.1.2.kfpkg_) avec kflash_gui
 
 ### 4) Télécharger le modèle sur MaixHub (utiliser le code machine récupéré au 1)) :
      
      https://maixhub.com/model/zoo/61
    
-   et le charger sur la carte à l'adresse 0X300000
+   et le charger sur la carte avec kflash_gui à l'adresse 0X300000
 
-### 5) Charger et exécuter le script : self_learning_classifier.py
+### 5) Sur une carte micro-SD, charger _3_panneaux.classifier_ et _classifiy.py_
    
-    https://github.com/sipeed/MaixPy-v1_scripts/tree/master/machine_vision/self_learning_classifier
-
-
-
-  
+    Inserer la carte micro-SD dans le M5Stack UnitV et lancer le script _classify.py_ 
       
