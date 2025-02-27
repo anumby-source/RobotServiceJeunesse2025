@@ -22,9 +22,14 @@ Flasher le firmrware (fichier _M5StickV_Firmware_v5.1.2.kfpkg_) avec kflash_gui
      
      https://maixhub.com/model/zoo/61
    
-   et le charger sur la carte avec kflash_gui à l'adresse 0X300000
+et le charger sur la carte avec kflash_gui à l'adresse 0X300000
 
 ### 5) Sur une carte micro-SD, charger _3_panneaux.classifier_ et _classify.py_
    
-    Inserer la carte micro-SD dans le M5Stack UnitV et lancer le script _classify.py_ 
+Inserer la carte micro-SD dans le M5Stack UnitV et lancer le script _classify.py_ 
+
+Pour chaque panneau reconnu, la led de la carte s'allume :
+   - rouge -> stop
+   - vert -> sens interdit
+   - bleu -> dépassement interdit
       
