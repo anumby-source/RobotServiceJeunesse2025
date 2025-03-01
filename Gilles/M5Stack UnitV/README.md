@@ -32,6 +32,8 @@ et le charger sur la carte avec kflash_gui à l'adresse 0X300000
    
 Inserer la carte micro-SD dans le M5Stack UnitV et lancer le script _classify.py_ 
 
+Il est aussi possible de charger des fichiers (en particulier 3_panneaux.classifier) directement dans la mémoire flash de la M5Stack UnitV, sans utiliser la carte SD, dans MaixPy IDE : onglet "Tools > transfert file to board".
+
 Pour chaque panneau reconnu, la led de la carte s'allume :
    - rouge -> stop
    - vert -> sens interdit
