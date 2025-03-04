@@ -34,4 +34,10 @@ On peut démarrer cette série de tuto Youtube en mode "très débutant". Un peu
 * [Vous allez aimer les contraintes (dans Fusion 360)](https://www.youtube.com/watch?v=fWU2rNBqDFI&list=PL0qHSH9_1qY5kvUzO7SlggBShYAllfP7j&index=19)
 * [Super Mercis !!!!](https://www.youtube.com/watch?v=ioGxxQVQzVY&list=PL0qHSH9_1qY5kvUzO7SlggBShYAllfP7j&index=20)
 
+Autre série pour Fusion 360 (2 séries: débutants, confirmés)
+
+* [TUTORIELS FUSION 360](https://www.youtube.com/channel/UC1f3yfI3YFzhuoScarGSKwA)
+
+* 
+
 
