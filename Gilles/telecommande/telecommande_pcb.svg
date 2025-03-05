@@ -36,7 +36,7 @@
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg4319" />
+     inkscape:current-layer="layer1" />
   <defs
      id="defs4316">
     <marker
@@ -1385,10 +1385,6 @@
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
        d="m 114.96428,51.253603 3.93273,3.067531 v 7.236229"
        id="path7072" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
-       d="m 107.85729,50.781673 v 1.573094"
-       id="path7074" />
     <rect
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.264999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
        id="rect1"
@@ -1606,6 +1602,10 @@
        height="8.4538212"
        x="79.658501"
        y="66.8405" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.765;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-dasharray:none"
+       d="m 98.887459,53.50379 2.002221,-0.22247"
+       id="path105" />
   </g>
   <g
      id="surface1"
