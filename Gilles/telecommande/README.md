@@ -1,6 +1,11 @@
-# Code télécommande
+## Développements télécommande
 
-## PCB - Implantation
+### PCB - Implantation
 <p align="center"> 
   <img src="./telecommande_pcb.png" width="500">
+<p/>
+
+### PCB - Typon
+<p align="center"> 
+  <img src="./telecommande_typon.png" width="500">
 <p/>
