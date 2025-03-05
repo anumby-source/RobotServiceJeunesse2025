@@ -32,6 +32,7 @@ def change_mode():
         samp = 100
         ramp = 50
     print('change mode, samp=', samp)
+
 # init ADC
 a0 = ADC(0, atten=ADC.ATTN_11DB)
 a1 = ADC(1, atten=ADC.ATTN_11DB)
@@ -40,16 +41,20 @@ maxadc = 2900         # adc max
 dzw    = 200          # dead zone width
 szw    = midadc - dzw # sensitive zone width
 samp   = 30
-ramp   = 20 
+ramp   = 20
+
 # init onbard led
 led = Pin(8, Pin.OUT)
+
 # init joystick click
 p2 = Pin(2, Pin.IN)
 pressed = False
+
 # A WLAN interface must be active to send()/recv()
 sta = network.WLAN(network.STA_IF)  # Or network.AP_IF
 sta.active(True)
 sta.disconnect()      # For ESP8266
+
 # init espnow
 e = espnow.ESPNow()
 e.active(True)
@@ -58,7 +63,7 @@ print("telecommande.py : Network active, Espnow ok")
 robot = b'\x24\x58\x7c\x91\xe3\x60'
 e.add_peer(robot)      # Must add_peer() before send()
 print("telecommande.py : robot added to peers")
-# 
+#
 if e.send("Starting..."):
     blink()
 else:
