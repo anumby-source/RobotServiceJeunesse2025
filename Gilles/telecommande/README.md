@@ -7,5 +7,5 @@
 
 ### PCB - Typon
 <p align="center"> 
-  <img src="./telecommande_typon.png" width="500">
+  <img src="./telecommande_typon.png" width="400">
 <p/>
