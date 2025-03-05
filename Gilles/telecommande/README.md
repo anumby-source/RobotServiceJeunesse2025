@@ -1,6 +1,6 @@
 # Code télécommande
 
-## Schema electrique
+## PCB - Implantation
 <p align="center"> 
-  <img src="./telecommande_pcb.svg" width="600">
+  <img src="./telecommande_pcb.svg" width="1000">
 <p/>
