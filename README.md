@@ -41,5 +41,6 @@ Autre série pour Fusion 360 (2 séries: débutants, confirmés)
 TinkerCAD
 
 * [TinkerCAD](https://www.youtube.com/watch?v=egNBQ0hXe2o)
+* [TinkerCAD2](https://www.youtube.com/watch?v=DtlmVaoMNMc)
 
 
