@@ -9,5 +9,5 @@
   ### PCB
 
 <p align="center"> 
-  <img src="./robotV2_pcb.png" width="500">
+  <img src="./robotV2_pcb.png" width="700">
 <p/>
