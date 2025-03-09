@@ -1,1 +1,0 @@
-Symboles composants Kicad
