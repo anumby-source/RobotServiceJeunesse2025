@@ -1,1 +1,0 @@
-Empreintes des composants
