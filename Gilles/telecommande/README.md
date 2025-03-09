@@ -1,6 +1,6 @@
 ## Développements télécommande
 
-Les fichiers de pcb contenus dans ce répertoire sont correspondent au prototype
+Les fichiers de pcb contenus dans ce répertoire sont ceux du prototype
 
 Pour les fichiers définitifs, voir le répertoire **Kicad_9.0**
 
