@@ -2,7 +2,7 @@
 
 Les fichiers de pcb contenus dans ce répertoire sont ceux du prototype
 
-Pour les fichiers définitifs, voir le répertoire **Kicad_9.0**
+Pour le pcb définitif, voir le répertoire **Kicad_9.0**
 
 ### PCB - Implantation
 <p align="center"> 
