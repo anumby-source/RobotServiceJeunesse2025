@@ -5,5 +5,5 @@ Contient entre autres des symboles et empreintes spécifiques au PCB du robot (s
 de l'ESP32-C3_mini)
 
 <p align="center"> 
-  <img src="./robot_pcb.png" width="400">
+  <img src="./robot_pcb.png" width="600">
 <p/>
