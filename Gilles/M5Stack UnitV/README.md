@@ -39,3 +39,15 @@ Pour chaque panneau reconnu, la led de la carte s'allume :
    - vert -> sens interdit
    - bleu -> dépassement interdit
       
+
+## Connecteur Grove 
+
+* 4 - GND noir
+* 3 - VCC orange
+* 2 - TX/SDA jaune
+* 1 - RX/SCL blanc
+
+* ![image](https://github.com/user-attachments/assets/2ac6458e-cd73-4ef4-918b-d3d32a30b153)
+* ![image](https://github.com/user-attachments/assets/c72b4672-5137-4473-9a05-a35cb2121fff)
+* 
+
