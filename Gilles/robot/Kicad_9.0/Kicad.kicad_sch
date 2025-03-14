@@ -254,6 +254,167 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:C_Polarized"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Polarized"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Polarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "CP_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Polarized_0_1"
+				(rectangle
+					(start -2.286 0.508)
+					(end 2.286 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.286) (xy -0.762 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 2.794) (xy -1.27 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 2.286 -0.508)
+					(end -2.286 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "C_Polarized_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -483,6 +644,76 @@
 					(at 0 -2.54 90)
 					(length 2.54)
 					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Gilles_Library:DRILL_HOLE"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "DH"
+				(at 0.254 2.794 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "DRILL"
+				(at 1.27 -1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Gilles_Library:DRILL_HOLE"
+				(at 0 -4.318 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "DRILL_HOLE_1_1"
+				(pin passive line
+					(at 2.54 0 180)
+					(length 2.54)
+					(name "DH"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1071,7 +1302,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Gilles_Library:XH2.54_2P_socket"
+			(property "Footprint" "Gilles_Library:XH2.54_2P_soc"
 				(at 0.254 -4.064 0)
 				(effects
 					(font
@@ -1112,6 +1343,206 @@
 				)
 			)
 			(symbol "XH2.54_2P_socket_1_1"
+				(pin passive line
+					(at 2.54 1.27 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -1.27 180)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "XH2.54_2P_socket_1"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "XH2.54_2P_socket"
+				(at 0 4.064 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Gilles_Library:XH2.54_2P_soc"
+				(at 0.254 -4.064 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "XH2.54_2P_socket_1_0_1"
+				(rectangle
+					(start -2.54 2.54)
+					(end 0 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "XH2.54_2P_socket_1_1_1"
+				(pin passive line
+					(at 2.54 1.27 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -1.27 180)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "XH2.54_2P_socket_2"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "XH2.54_2P_socket"
+				(at 0 4.064 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Gilles_Library:XH2.54_2P_soc"
+				(at 0.254 -4.064 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "XH2.54_2P_socket_2_0_1"
+				(rectangle
+					(start -2.54 2.54)
+					(end 0 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "XH2.54_2P_socket_2_1_1"
 				(pin passive line
 					(at 2.54 1.27 180)
 					(length 2.54)
@@ -1777,6 +2208,12 @@
 		(uuid "bf5f5e49-2f46-43ff-a427-070b73519315")
 	)
 	(junction
+		(at 163.83 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c62b4e56-17fc-479f-90e2-d1e31589d060")
+	)
+	(junction
 		(at 166.37 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2040,6 +2477,16 @@
 	)
 	(wire
 		(pts
+			(xy 160.02 33.02) (xy 163.83 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6519af47-cb17-4da8-ad2a-23ba2bb4228f")
+	)
+	(wire
+		(pts
 			(xy 104.14 102.87) (xy 104.14 109.22)
 		)
 		(stroke
@@ -2120,7 +2567,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 29.21) (xy 161.29 35.56)
+			(xy 157.48 29.21) (xy 157.48 30.48)
 		)
 		(stroke
 			(width 0)
@@ -2140,7 +2587,17 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 29.21) (xy 163.83 36.83)
+			(xy 163.83 33.02) (xy 177.8 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9637c28c-e8d1-4022-8f82-0b3a79d50d8b")
+	)
+	(wire
+		(pts
+			(xy 160.02 29.21) (xy 160.02 33.02)
 		)
 		(stroke
 			(width 0)
@@ -2200,6 +2657,16 @@
 	)
 	(wire
 		(pts
+			(xy 163.83 33.02) (xy 163.83 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc206f66-7e19-4ce0-9440-25c3db8a8bb2")
+	)
+	(wire
+		(pts
 			(xy 166.37 57.15) (xy 166.37 64.77)
 		)
 		(stroke
@@ -2250,6 +2717,16 @@
 	)
 	(wire
 		(pts
+			(xy 157.48 30.48) (xy 161.29 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6689cbe-9978-4891-a2c5-c73b0294b856")
+	)
+	(wire
+		(pts
 			(xy 148.59 104.14) (xy 148.59 109.22)
 		)
 		(stroke
@@ -2277,6 +2754,16 @@
 			(type default)
 		)
 		(uuid "e402df6f-0e4e-4c99-a82a-21907ec0b586")
+	)
+	(wire
+		(pts
+			(xy 161.29 30.48) (xy 161.29 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4f5ba89-2f03-4853-8e22-9cfa78d83bd8")
 	)
 	(wire
 		(pts
@@ -2520,6 +3007,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 185.42 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "27c984ad-f8a8-483e-891a-cd1410d23b6c")
+		(property "Reference" "#PWR01"
+			(at 185.42 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 185.42 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 185.42 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 185.42 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "63be3aeb-187f-44d0-9443-f6bd64de1825")
+		)
+		(instances
+			(project ""
+				(path "/f5cd1743-68f7-427a-9bbd-0b3fc47f8671"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 161.29 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2585,35 +3138,34 @@
 		)
 	)
 	(symbol
-		(lib_id "Gilles_Library:XH2.54_2P_socket")
-		(at 162.56 26.67 270)
+		(lib_id "Gilles_Library:DRILL_HOLE")
+		(at 97.79 36.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "37084d85-02b5-41b7-9418-4a8abfb7a1e0")
-		(property "Reference" "J3"
-			(at 166.37 24.1299 90)
+		(uuid "3daae202-8a0c-4982-9219-8473650309ea")
+		(property "Reference" "DH2"
+			(at 98.044 34.036 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Value" "XH2.54_2P_socket"
-			(at 166.37 26.6699 90)
+		(property "Value" "DRILL"
+			(at 97.79 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Gilles_Library:XH2.54_2P_soc"
-			(at 158.496 26.924 0)
+		(property "Footprint" "Gilles_Library:DRILL_HOLE"
+			(at 97.79 41.148 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2622,7 +3174,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 162.56 26.67 0)
+			(at 97.79 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2631,7 +3183,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 162.56 26.67 0)
+			(at 97.79 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2639,16 +3191,13 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "9c76a1d3-7855-45bd-b286-07e25009e1d9")
-		)
 		(pin "1"
-			(uuid "ef4ac823-a843-4a3e-afa5-c82462b458c3")
+			(uuid "fa5fbb40-7813-43bf-a01c-c1760908972a")
 		)
 		(instances
 			(project ""
 				(path "/f5cd1743-68f7-427a-9bbd-0b3fc47f8671"
-					(reference "J3")
+					(reference "DH2")
 					(unit 1)
 				)
 			)
@@ -3124,33 +3673,33 @@
 	)
 	(symbol
 		(lib_id "Gilles_Library:XH2.54_2P_socket")
-		(at 110.49 120.65 90)
+		(at 158.75 26.67 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "71b6b45f-8cea-4397-b9fc-4f908c2f5d9a")
-		(property "Reference" "J2"
-			(at 108.458 124.714 90)
+		(uuid "5fb0cf43-199d-43a7-aa9f-e4c4851b269c")
+		(property "Reference" "J3"
+			(at 155.956 22.606 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Value" "XH2.54_2P_socket"
-			(at 107.696 127.508 90)
+			(at 155.702 20.32 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Gilles_Library:XH2.54_2P_soc"
-			(at 114.554 120.396 0)
+			(at 154.686 26.924 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3159,7 +3708,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 110.49 120.65 0)
+			(at 158.75 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3168,7 +3717,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 110.49 120.65 0)
+			(at 158.75 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3177,15 +3726,85 @@
 			)
 		)
 		(pin "2"
-			(uuid "239b70b9-fc2d-433f-b642-acaa2747de6c")
+			(uuid "b5839fe0-5eac-4eb6-999b-02df5ca17566")
 		)
 		(pin "1"
-			(uuid "13691f55-e4f7-4586-8384-0bf6cd1ba4a4")
+			(uuid "ade00a7b-a479-41e5-825d-ebd85c702133")
 		)
 		(instances
 			(project ""
 				(path "/f5cd1743-68f7-427a-9bbd-0b3fc47f8671"
-					(reference "J2")
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "XH2.54_2P_socket_2")
+		(lib_id "Gilles_Library:XH2.54_2P_socket")
+		(at 110.49 68.58 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "72e9239c-26ae-446c-a314-676e06c3db06")
+		(property "Reference" "J1"
+			(at 108.204 64.516 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "XH2.54_2P_socket"
+			(at 108.458 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilles_Library:XH2.54_2P_soc"
+			(at 106.426 68.834 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 110.49 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 110.49 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "692df16e-61cb-4f92-aaf6-143c0b5abf29")
+		)
+		(pin "2"
+			(uuid "b8107c8f-b003-4e1c-b1e5-9884d567bb49")
+		)
+		(instances
+			(project ""
+				(path "/f5cd1743-68f7-427a-9bbd-0b3fc47f8671"
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -3259,34 +3878,34 @@
 		)
 	)
 	(symbol
-		(lib_id "Gilles_Library:XH2.54_2P_socket")
-		(at 110.49 68.58 270)
+		(lib_id "Gilles_Library:DRILL_HOLE")
+		(at 107.95 36.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "81b5eae5-eb7c-41cf-a2db-dcfb0de7b902")
-		(property "Reference" "J1"
-			(at 106.172 61.722 90)
+		(fields_autoplaced yes)
+		(uuid "7d8782ff-14f9-4224-81d2-84316ac3ca5d")
+		(property "Reference" "DH3"
+			(at 108.204 34.036 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Value" "XH2.54_2P_socket"
-			(at 106.68 64.262 90)
+		(property "Value" "DRILL"
+			(at 107.95 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Gilles_Library:XH2.54_2P_soc"
-			(at 106.426 68.834 0)
+		(property "Footprint" "Gilles_Library:DRILL_HOLE"
+			(at 107.95 41.148 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3295,7 +3914,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 110.49 68.58 0)
+			(at 107.95 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3304,7 +3923,74 @@
 			)
 		)
 		(property "Description" ""
-			(at 110.49 68.58 0)
+			(at 107.95 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "13216856-fee6-4345-9d0e-c64ebddd5664")
+		)
+		(instances
+			(project ""
+				(path "/f5cd1743-68f7-427a-9bbd-0b3fc47f8671"
+					(reference "DH3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "XH2.54_2P_socket_1")
+		(lib_id "Gilles_Library:XH2.54_2P_socket")
+		(at 110.49 120.65 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "851e9cce-0015-40cc-8c87-089716da502b")
+		(property "Reference" "J2"
+			(at 108.204 124.714 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "XH2.54_2P_socket"
+			(at 108.204 127 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Gilles_Library:XH2.54_2P_soc"
+			(at 114.554 120.396 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 110.49 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 110.49 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3313,15 +3999,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "5c48fe0c-9470-4cb4-9c2b-3d3a4dbf3407")
+			(uuid "985eba1b-71ac-4ff5-98ef-0f484eb162a3")
 		)
 		(pin "1"
-			(uuid "fc6e385a-7131-4ae1-865f-5b76667ffb16")
+			(uuid "0d583cc4-5fa4-4afd-842b-74418e389df2")
 		)
 		(instances
 			(project ""
 				(path "/f5cd1743-68f7-427a-9bbd-0b3fc47f8671"
-					(reference "J1")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -3433,6 +4119,206 @@
 			(project ""
 				(path "/f5cd1743-68f7-427a-9bbd-0b3fc47f8671"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Gilles_Library:DRILL_HOLE")
+		(at 118.11 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "91fc0c2d-e649-4389-b3e0-437bd3fe3e01")
+		(property "Reference" "DH4"
+			(at 118.364 34.036 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "DRILL"
+			(at 118.11 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Gilles_Library:DRILL_HOLE"
+			(at 118.11 41.148 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 118.11 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "06024edd-c8f5-41a3-bf13-670c12724097")
+		)
+		(instances
+			(project ""
+				(path "/f5cd1743-68f7-427a-9bbd-0b3fc47f8671"
+					(reference "DH4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 181.61 33.02 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "93832fd5-7307-42d0-b322-b4cbe1224beb")
+		(property "Reference" "C1"
+			(at 180.721 25.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "C_Polarized"
+			(at 180.721 27.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Gilles_Library:CP_8mm_3.5mm"
+			(at 185.42 32.0548 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 181.61 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 181.61 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "16d0e97c-5d44-4fe6-a3b9-093724ed5036")
+		)
+		(pin "2"
+			(uuid "ac8179ff-0505-49a4-b48c-918ec9a5d18b")
+		)
+		(instances
+			(project ""
+				(path "/f5cd1743-68f7-427a-9bbd-0b3fc47f8671"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 110.49 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9568938e-9cb7-4401-8583-a569c9e1c761")
+		(property "Reference" "#PWR013"
+			(at 110.49 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 110.49 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 110.49 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 110.49 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 110.49 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6080ac3b-6c1b-4cbf-8e15-39ee1f7f8e2d")
+		)
+		(instances
+			(project ""
+				(path "/f5cd1743-68f7-427a-9bbd-0b3fc47f8671"
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -3569,6 +4455,72 @@
 		)
 	)
 	(symbol
+		(lib_id "Gilles_Library:DRILL_HOLE")
+		(at 86.36 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9f2451c8-30fd-41a1-bf53-319069588073")
+		(property "Reference" "DH1"
+			(at 86.614 34.036 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "DRILL"
+			(at 86.36 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Gilles_Library:DRILL_HOLE"
+			(at 86.36 41.148 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 86.36 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 86.36 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f48a6cdf-bad3-4b32-a252-aad65ff952ba")
+		)
+		(instances
+			(project ""
+				(path "/f5cd1743-68f7-427a-9bbd-0b3fc47f8671"
+					(reference "DH1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Gilles_Library:1N5818")
 		(at 172.72 64.77 270)
 		(unit 1)
@@ -3631,6 +4583,72 @@
 			(project ""
 				(path "/f5cd1743-68f7-427a-9bbd-0b3fc47f8671"
 					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 120.65 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b0949e36-41a4-4ca7-b480-1b03988a9aaa")
+		(property "Reference" "#PWR014"
+			(at 120.65 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 120.65 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 120.65 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 120.65 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 120.65 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "770c01f3-e313-4733-8a5e-48c43de93019")
+		)
+		(instances
+			(project ""
+				(path "/f5cd1743-68f7-427a-9bbd-0b3fc47f8671"
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -3708,6 +4726,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 88.9 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b5f0cc02-50fb-470f-b9b8-00bd25d3f52a")
+		(property "Reference" "#PWR02"
+			(at 88.9 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 88.9 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 88.9 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.9 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 88.9 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4831bd11-7db3-4853-93e4-16a4adc56546")
+		)
+		(instances
+			(project ""
+				(path "/f5cd1743-68f7-427a-9bbd-0b3fc47f8671"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 109.22 102.87 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3766,6 +4850,72 @@
 			(project ""
 				(path "/f5cd1743-68f7-427a-9bbd-0b3fc47f8671"
 					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 100.33 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c1e2f325-6033-4653-b493-d08ca1dc4f74")
+		(property "Reference" "#PWR012"
+			(at 100.33 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 100.33 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 100.33 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 100.33 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 100.33 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1a77f734-5ba9-43bd-8a58-0d1da7d05530")
+		)
+		(instances
+			(project ""
+				(path "/f5cd1743-68f7-427a-9bbd-0b3fc47f8671"
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
