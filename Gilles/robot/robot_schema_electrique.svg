@@ -9,6 +9,9 @@
    id="svg1"
    inkscape:version="1.4 (86a8ad7, 2024-10-11)"
    sodipodi:docname="robot_schema_electrique.svg"
+   inkscape:export-filename="robot_schema_electrique.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -25,8 +28,8 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="1.5768098"
-     inkscape:cx="325.34045"
-     inkscape:cy="358.00133"
+     inkscape:cx="325.34044"
+     inkscape:cy="358.63552"
      inkscape:current-layer="svg1" />
   <defs
      id="defs1">
@@ -2694,24 +2697,24 @@
     </g>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 46.630433,67.46087 h -2.85639 l 1.39009,2.11346 z"
+       d="m 49.238744,67.46087 h -2.85639 l 1.39009,2.11346 z"
        id="path142"
        sodipodi:nodetypes="cccc" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 46.649733,70.29735 v -0.71981 h -2.78016 c -0.0317,-0.0938 -0.0683,-0.18603 -0.0952,-0.2813 -0.005,-0.0178 0,-0.0371 0,-0.0556 0,-0.14831 0,-0.29662 0,-0.44493 0,-0.0371 0,-0.0742 0,-0.11124 0,-0.0185 0.0185,-0.0556 0,-0.0556 -0.0185,0 -0.0131,0.0425 0,0.0556 0.0131,0.0131 0.0371,0 0.0556,0"
+       d="m 49.258044,70.29735 v -0.71981 h -2.78016 c -0.0317,-0.0938 -0.0683,-0.18603 -0.0952,-0.2813 -0.005,-0.0178 0,-0.0371 0,-0.0556 0,-0.14831 0,-0.29662 0,-0.44493 0,-0.0371 0,-0.0742 0,-0.11124 0,-0.0185 0.0185,-0.0556 0,-0.0556 -0.0185,0 -0.0131,0.0425 0,0.0556 0.0131,0.0131 0.0371,0 0.0556,0"
        id="path143" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 45.205953,69.61419 v 2.984"
+       d="m 47.814264,69.61419 v 2.984"
        id="path144" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#ArrowWide)"
-       d="m 45.270405,67.380023 v -8.66146"
+       d="m 47.878716,67.380023 v -8.66146"
        id="path145" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#ArrowWide)"
-       d="M 47.606293,72.83793 V 58.599913"
+       d="M 45.066293,72.83793 V 58.599913"
        id="path146" />
     <rect
        style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#cc0000;stroke-width:0.264999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
@@ -3162,7 +3165,7 @@
   </g>
   <g
      id="g175"
-     transform="matrix(0,-0.24242424,0.24242424,0,12.405914,88.97207)">
+     transform="matrix(0,-0.24242424,0.24242424,0,15.543393,88.97207)">
     <g
        style="fill:#000000;fill-opacity:1"
        id="g174">
@@ -3236,7 +3239,7 @@
   </g>
   <g
      id="g187"
-     transform="matrix(0,-0.24242424,0.24242424,0,15.535306,88.786473)">
+     transform="matrix(0,-0.24242424,0.24242424,0,12.466139,88.786473)">
     <g
        style="fill:#000000;fill-opacity:1"
        id="g186">
