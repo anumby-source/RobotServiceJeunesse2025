@@ -39,7 +39,7 @@ os.remove('history.txt')
 
 f = open("history.txt", "w+")
 
-for h in history.keys():
+for h in sorted(history.keys()):
     print(f"history[{h}]={history.value(h)}\n")
     f.write(f"history[{h}]={history.value(h)}\n")
 f.close()
