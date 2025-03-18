@@ -1,1 +1,1 @@
-#   Fichiers stl et gcode des pièces à imprimer
+#   Fichiers stl des pièces à imprimer
