@@ -8,7 +8,7 @@ Pour le pcb définitif, voir le répertoire **Kicad_9.0**
 ### Schéma électrique
 
 <p align="center"> 
-  <img src="./robot_schema_electrique.png" width="700">
+  <img src="./robot_schema_electrique.png" width="700"> 
 <p/>
 
   ### PCB
