@@ -1,4 +1,4 @@
-import random
+import random, time, os
 
 class Steps:
     def __init__(self):
@@ -13,17 +13,34 @@ class Steps:
 
     def value(self, k):
         return self.steps[k]
+    
+def motor():
+    return int(random.random()*100)
+
+def detect():
+    return random.randint(1, 6)
+    
 
 history = Steps()
 
-for s in range(6):
-    # print("s = ", s)
-    town = f"ville {s}"
-    t = random.random()*100
-    history.addstep(s, town, t)
+t = time.time()
 
-f = open("history.txt", "w")
+s = 1
+while True:
+    # print("s = ", s)
+    town = detect()
+    t += motor()
+    history.addstep(s, town, t)
+    if town == 6:
+        break
+    s += 1
+    
+os.remove('history.txt')
+
+f = open("history.txt", "w+")
+
 for h in history.keys():
+    print(f"history[{h}]={history.value(h)}\n")
     f.write(f"history[{h}]={history.value(h)}\n")
 f.close()
 
