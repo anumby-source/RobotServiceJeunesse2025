@@ -2811,7 +2811,7 @@
 		(at 90.3 122.934314 90)
 		(descr "JST EH series connector, B2B-EH-A (http://www.jst-mfg.com/product/pdf/eng/eEH.pdf), generated with kicad-footprint-generator")
 		(tags "connector JST EH vertical")
-		(property "Reference" "JUART"
+		(property "Reference" "UART"
 			(at -3.4 4 90)
 			(layer "F.SilkS")
 			(uuid "143c2319-e7a9-4c57-880a-ae1f32c05a12")
