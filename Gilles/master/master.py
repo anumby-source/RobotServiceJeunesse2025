@@ -1,7 +1,6 @@
 from time import monotonic, sleep
 from matplotlib.gridspec import GridSpec
-from matplotlib.widgets import Button, RadioButtons
-import matplotlib.patches as mpatches
+from matplotlib.widgets import Button, CheckButtons
 from serial.tools.list_ports import comports
 from uPython import uPython
 from serial import Serial
@@ -9,26 +8,33 @@ from serial import Serial
 import matplotlib.pyplot as plt
 import numpy as np
 
-scenario = ['stop', 'sens-interdit', 'dep-interdit']
+# scenario = ['stop', 'sens-interdit', 'dep-interdit']
+scenario = ['Paris', 'Auxerre', 'Lyon', 'Marseille']
+robot_list = ['robot 1', 'robot 2', 'robot 3', 'robot 4', 'robot 5', 'robot 6']
 
 class master():
 
-    def __init__(self, nplayers=1, port=None):
+    def __init__(self, port=None):
 
-        self.nplayers = nplayers
+        self.connect_to_base(port=port)
+        self.start_base()
         self.run = False
-        self.start_t = 0
-        self.axplayer = []
+        self.start_t = 0                           # for timing purpose
+        self.players = []                          # list of robot number (2 max)
+        self.axplayer = []                         # list of score displays (2 max)
+        self.etapes = [[],[]]
+        self.progression = [0, 0]                  # players progression
         self.fig = plt.figure(figsize=(10, 8))
         self.fig.set_facecolor('w')
         self.gs = GridSpec(6, 6, self.fig)
         self.create_chrono()
         self.create_buttons()
-        self.create_radio_buttons()
+        self.create_check_buttons()
         plt.tight_layout()
         # plt.show()
 
     def create_chrono(self):
+        ''' Create chrono timer and display '''
 
         ax = self.fig.add_subplot(self.gs[0, 2:4])
         ax.axison = False
@@ -42,126 +48,155 @@ class master():
         self.timer.add_callback(self.update_display)
 
     def create_buttons(self):
+        ''' Create game management buttons '''
 
         ax = self.fig.add_axes([.7, .92, .1, .05])
         self.bStart = Button(ax, 'Start')
         self.bStart.on_clicked(self.start_stop)
         #
         ax = self.fig.add_axes([.7, .85, .1, .05])
-        self.bReset = Button(ax, 'Reset')
-        self.bReset.on_clicked(self.reset_chrono)
+        self.bClear = Button(ax, 'Clear')
+        self.bClear.on_clicked(self.clear_chrono)
         #
-        ax = self.fig.add_axes([.25, .85, .05, .05])
-        self.bOk = Button(ax, 'OK')
-        self.bOk.on_clicked(self.init_config)
+        ax = self.fig.add_axes([.25, .88, .05, .05])
+        self.bReset = Button(ax, 'Reset')
+        self.bReset.on_clicked(self.reset_players)
 
-    def create_radio_buttons(self):
+    def create_check_buttons(self):
+        ''' Create robot selection buttons '''
 
-        ax = self.fig.add_axes([.05, .9, .2, .05])
+        ax = self.fig.add_axes([.05, .80, .15, .2])
         ax.axison = False
-        ax.text(0., 0.7, 'nombre de joueurs', fontsize=16, color='b',
-                        bbox=dict(boxstyle="round", fc="w", ec="k"))
-        ax = self.fig.add_axes([.1, .83, .15, .1])
-        ax.axison = False
-        self.radio = RadioButtons(ax, labels=('1', '2'), active=0,
-                                    label_props={'fontsize': [12, 12]})
-        self.radio.on_clicked(self.select_nb)
+        self.check = CheckButtons(ax, labels=robot_list, actives=(False,)*6, label_props={'fontsize': [12, 12]})
+        self.check.on_clicked(self.select_players)
 
     def update_chrono(self):
+        ''' Update chrono display '''
 
         self.chrono.set_text('{:5.1f}'.format(monotonic()-self.start_t))
 
     def update_display(self):
-
-        if not self.run: return
+        ''' Read serial buffer and update score display '''
 
         if self.ser.in_waiting:
             msg = self.ser.read(self.ser.in_waiting)
             # print(msg)
             try:
-                j, etape = msg.strip(b'\r\n').split(b':')
-                j, etape = int(j), etape.decode()
-                # print('joueur: {}  etape: {}'.f ormat(j+1, etape))
-                if etape == scenario[self.progression[j]]:
-                    tim = self.chrono.get_text()
-                    self.etapes[j][self.progression[j]].set_text(tim)
-                    self.progression[j] += 1
-                    if self.progression[j] == len(scenario):
-                        self.start_stop(None)
-                        alert = plt.figure(figsize=(5,2), facecolor='g')
-                        alert.text(0.1, 0.5, self.names[j] + " vainqueur !" , fontsize=26, color='w', va='center')
+                l = msg.split(b'\r\n')
+                l.pop()
+                for e in l:
+                    j, etape = e.split(b':')
+                    j, etape = int(j), etape.decode()
+                    # print(j, etape)
+                    if j in self.players:
+                        ind = self.players.index(j)
+                        print('robot: {}  etape: {}'.format(j, etape))
+                        if etape == scenario[self.progression[ind]]:
+                            tim = self.chrono.get_text()
+                            self.etapes[ind][self.progression[ind]].set_text(tim)
+                            self.progression[ind] += 1
+                            if self.progression[ind] == len(scenario):
+                                self.start_stop(None)
+                                alert = plt.figure(figsize=(4.5, 2), facecolor='g')
+                                alert.text(0.1, 0.5, robot_list[j-1] + " vainqueur !" , fontsize=26, color='w', va='center')
             except:
                 print(msg)
+        return
 
     def start_stop(self, event):
+        ''' Start/Stop button handler '''
 
         if self.run == False:
-            self.ser.write(b'start\r\n')
             self.start_t = monotonic() - float(self.chrono.get_text())
             self.timer.start()
             self.run = True
             self.bStart.label.set_text('Stop')
+            self.ser.read(self.ser.in_waiting)    # empty serial buffer
         else:
             self.timer.stop()
             self.run = False
             self.bStart.label.set_text('Start')
 
-    def reset_chrono(self, event):
+    def clear_chrono(self, event):
+        ''' Stop chrono and set to 0'''
 
         self.timer.stop()
         self.chrono.set_text('{:5.1f}'.format(0))
         self.run = False
         self.bStart.label.set_text('Start')
 
-    def select_nb(self, label):
+    def reset_players(self, event):
+        ''' Reset game '''
 
-        self.nplayers = int(label)
+        for k in range(len(robot_list)):
+            if self.check.get_status()[k]:
+                self.check.eventson = False    # disable event to prevent call to select_players
+                self.check.set_active(k)
+                self.check.eventson = True     # enable event
 
-    def init_config(self, event):
-
+        # remove all players score display
         for ax in self.axplayer:
             ax.remove()
 
+        self.timer.stop()
+        self.clear_chrono(None)
+        self.run = False
+        self.bStart.label.set_text('Start')
+
         self.axplayer = []
-        self.names = self.start_master()
-        if self.names == None:
-            return
-        # names=['ROBOT 1']
+        self.players = []
         self.etapes = [[],[]]
         self.progression = [0, 0]
+        return
 
-        for k in range(self.nplayers):
-            ax = self.fig.add_subplot(self.gs[1:, 3*k:3*k+3])
-            ax.set_xticks([])
-            ax.set_yticks([])
-            ax.text(.5, .95, self.names[k], color='b', fontsize=35, va='center', ha='center')
-            for i, etape in enumerate(scenario):
-                ax.text(.05, 0.8 - i*.1, etape, color='k', fontsize=26)
-                t = ax.text(.75, 0.8 - i*.1, '000.0', color='r', fontsize=26)
-                self.etapes[k].append(t)
-            self.axplayer.append(ax)
+    def select_players(self, label):
+        ''' Select one or to robots and initialize score display '''
 
-    def start_master(self):
+        ind = robot_list.index(label)
+        selected = self.check.get_status()[ind]
 
-        u = uPython(port='COM10')
+        if (not selected) or (self.check.get_status().count(True) > 2):  # already selected or more than 2 robots
+            self.check.eventson = False    # disable event to prevent recursion
+            self.check.set_active(ind)
+            self.check.eventson = True     # enable event
+            return
+
+        robot_num = ind + 1
+        k = len(self.axplayer)
+        # create player score display
+        ax = self.fig.add_subplot(self.gs[1:, 3*k:3*k+3])
+        ax.set_xticks([])
+        ax.set_yticks([])
+        ax.text(.5, .95, label, color='b', fontsize=35, va='center', ha='center')
+        for i, etape in enumerate(scenario):
+            ax.text(.05, 0.8 - i*.1, etape, color='k', fontsize=26)
+            t = ax.text(.75, 0.8 - i*.1, '000.0', color='r', fontsize=26)
+            self.etapes[k].append(t)
+        self.axplayer.append(ax)
+        self.players.append(robot_num)
+
+    def start_base(self):
+        ''' Send start command to base '''
+
+        print('starting base')
+        # start base
+        self.ser.write(b'import base\r\n')
+        ans = self.ser.read(24)
+        # print(ans)
+
+    def connect_to_base(self, port=None):
+        ''' Look for Micropython device connected to a serial port '''
+
+        u = uPython(port=port)
         #
         if not hasattr(u, 'serial'):
             alert = plt.figure(figsize=(4,2), facecolor='r')
             alert.text(0.1, 0.5, "Base non trouvée", fontsize=26, color='w', va='center')
-            # plt.show()
-            # raise Exception("ESP32C3 non trouvée")
-            return
+            raise Exception("base not found")
         #
         self.ser = u.serial
-        self.ser.write(b'import base\r\n')
-        self.ser.read(24)
-        self.ser.write(str(self.nplayers).encode() + b'\r\n')
-        self.ser.read(3)
-        #
-        ans = self.ser.read(self.nplayers * 7).decode()
-        names = [ans[k*7:(k+1)*7] for k in range(self.nplayers)]
-        #
-        return names
 
 if __name__ == '__main__':
     m = master()
+    # m = master(port='COM10')
+    # m = master(port='/dev/cu.usbmodem14201')
