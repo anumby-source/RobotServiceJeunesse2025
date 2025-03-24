@@ -12,3 +12,19 @@
   <img src="./depassement.png" width="200"> 
 <p/>
 
+<p align="center"> 
+  <img src="./Paris" width="200"> 
+<p/>
+
+<p align="center"> 
+  <img src="./Auxerre" width="200"> 
+<p/>
+
+<p align="center"> 
+  <img src="./Lyon" width="200"> 
+<p/>
+
+<p align="center"> 
+  <img src="./Marseille" width="200"> 
+<p/>
+
