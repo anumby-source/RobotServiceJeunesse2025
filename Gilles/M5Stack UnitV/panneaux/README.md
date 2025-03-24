@@ -5,7 +5,7 @@
 <p/>
 
 <p align="center"> 
-  <img src="./sens-interdit" width="200"> 
+  <img src="./sens interdit" width="200"> 
 <p/>
 
 <p align="center"> 
