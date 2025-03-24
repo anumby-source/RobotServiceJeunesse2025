@@ -13,18 +13,18 @@
 <p/>
 
 <p align="center"> 
-  <img src="./Paris" width="200"> 
+  <img src="./Paris.png" width="200"> 
 <p/>
 
 <p align="center"> 
-  <img src="./Auxerre" width="200"> 
+  <img src="./Auxerre.png" width="200"> 
 <p/>
 
 <p align="center"> 
-  <img src="./Lyon" width="200"> 
+  <img src="./Lyon.png" width="200"> 
 <p/>
 
 <p align="center"> 
-  <img src="./Marseille" width="200"> 
+  <img src="./Marseille.png" width="200"> 
 <p/>
 
