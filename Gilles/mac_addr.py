@@ -1,0 +1,21 @@
+robot_mac = {
+    1 : b'\xa0\x85\xe3N\xef\x00',
+    2 : b'H1\xb7zi\xd8',
+    3 : b'H1\xb7z\x81\xc0',
+    4 : b'H1\xb7z(\xc8',
+    5 : b'\xa0\x85\xe3M\xb9\x88',
+    6 : b'\xa0\x85\xe3M\xd5$',
+    7 : b'\xa0\x85\xe3NkD',
+    8 : b''
+    }
+
+telecommande_mac = {
+    1 : b'\x10\x00;\x02X\x90',
+    2 : b'\xa0\x85\xe3O\x07\x9c',
+    3 : b'\xa0\x85\xe3N2\xd4',
+    4 : b'H1\xb7z\x14`',
+    5 : b'\xa0\x85\xe3N\xc8\xd4',
+    6 : b'H1\xb7{\xad\x14',
+    7 : b'H1\xb7{\xbf\x88',
+    8 : b''
+    }
