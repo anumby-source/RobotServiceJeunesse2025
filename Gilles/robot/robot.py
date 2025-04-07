@@ -4,19 +4,17 @@
 #
 ###################################################################
 
-import os
 import network
 import espnow
 from time import sleep_ms, ticks_ms
 from machine import Pin, UART
 from dcMotor import dcMotor
-from struct import pack
+from mac_addr import telecommande_mac
 
 #
-robot_num = 1
-liste_pan = ['Paris', 'Auxerre', 'Lyon', 'Marseille']
+num = 5
+telecommandeAddr = telecommande_mac[num]
 baseAddr  = b'$X|\x91\xe0\xd8' #  base Mac Address
-joyAddr   = b'\xa0\x85\xe3\x1aX\xb8'  #  joystick mac address
 
 # motors initialization
 ml = dcMotor(pin1=5, pin2=6, pinEn=7, freq=10000)      # left motor
@@ -45,12 +43,12 @@ e = espnow.ESPNow()
 e.active(True)
 print("robot : espnow init ok")
 
-# add joystick and base to peers
+# add telecommande and base to peers
 try:
-    e.add_peer(joyAddr)
+    e.add_peer(telecommandeAddr)
 except:
-    pass         # if joyAddr already in peer list
-print(b"robot : joystick address added")
+    pass         # if telecommande already in peer list
+print(b"robot : telecommande address added")
 # 
 try:
     e.add_peer(baseAddr)
@@ -70,9 +68,9 @@ while True:
             print(msg)
             msg = b''       
     try:
-        addr, cmd = e.recv(0)
-#         print(cmd)
-        if addr == joyAddr:
+        addr, cmd = e.recv()
+        if cmd: print(cmd)
+        if addr == telecommandeAddr:
             exec(cmd)
     except:
         print(b"robot : error command:" + cmd)
