@@ -3,8 +3,16 @@ import espnow
 from machine import Pin, ADC
 from time import sleep_ms, ticks_ms
 from neopixel import NeoPixel
+from mac_addr import robot_mac, telecommande_mac
+
+#
+num = 3
+robotAddr = robot_mac[num]
+
 #
 red, green, blue, white, black = (0, 128, 0), (128, 0, 0), (0, 0, 128), (128, 128, 128), (0, 0, 0)
+
+#
 def normalize(x, amp=100):
     ''' resize x -> [-amp;+amp] '''
     x -= midadc
@@ -60,8 +68,7 @@ sta.disconnect()      # For ESP8266
 e = espnow.ESPNow()
 e.active(True)
 print("telecommande.py : Network active, Espnow ok")
-# peer = b'\xe8\x06\x90\x66\x68\x0c'   # display pannel MAC address
-robotAddr = b'\x24\x58\x7c\x91\xe3\x60'
+
 try:
     e.add_peer(robotAddr)      # Must add_peer() before send()
 except:
