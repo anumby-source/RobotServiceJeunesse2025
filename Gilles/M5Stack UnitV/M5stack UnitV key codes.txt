@@ -1,0 +1,8 @@
+M5stack UnitV key code:
+
+1 : e1584ebccc8f507384e4d3b90d83d138
+2 : 64a06ce50d68fb7728f1cecbdd4eec8e
+3 : 357b5d4ab91034dcd91faec8d78e7113
+4 : 
+5 : e2d85a1878acf648d294aea905262165
+6 : 
