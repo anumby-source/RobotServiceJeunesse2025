@@ -4,13 +4,12 @@ from matplotlib.widgets import Button, CheckButtons
 from serial.tools.list_ports import comports
 from uPython import uPython
 from serial import Serial
-
 import matplotlib.pyplot as plt
-import numpy as np
 
 # scenario = ['stop', 'sens-interdit', 'dep-interdit']
-scenario = ['Paris', 'Auxerre', 'Lyon', 'Marseille']
+scenario = ['Paris', 'Sens', 'Lyon', 'Marseille', 'Toulon']
 robot_list = ['robot 1', 'robot 2', 'robot 3', 'robot 4', 'robot 5', 'robot 6']
+plt.ion()
 
 class master():
 
@@ -31,7 +30,7 @@ class master():
         self.create_buttons()
         self.create_check_buttons()
         plt.tight_layout()
-        # plt.show()
+        plt.show()
 
     def create_chrono(self):
         ''' Create chrono timer and display '''
@@ -79,28 +78,21 @@ class master():
         ''' Read serial buffer and update score display '''
 
         if self.ser.in_waiting:
-            msg = self.ser.read(self.ser.in_waiting)
-            # print(msg)
-            try:
-                l = msg.split(b'\r\n')
-                l.pop()
-                for e in l:
-                    j, etape = e.split(b':')
-                    j, etape = int(j), etape.decode()
-                    # print(j, etape)
-                    if j in self.players:
-                        ind = self.players.index(j)
-                        print('robot: {}  etape: {}'.format(j, etape))
-                        if etape == scenario[self.progression[ind]]:
-                            tim = self.chrono.get_text()
-                            self.etapes[ind][self.progression[ind]].set_text(tim)
-                            self.progression[ind] += 1
-                            if self.progression[ind] == len(scenario):
-                                self.start_stop(None)
-                                alert = plt.figure(figsize=(4.5, 2), facecolor='g')
-                                alert.text(0.1, 0.5, robot_list[j-1] + " vainqueur !" , fontsize=26, color='w', va='center')
-            except:
-                print(msg)
+            msg = self.ser.read(self.ser.in_waiting).strip()
+            print(msg)
+            j, etape = msg.split(b':')
+            j, etape = int(j), etape.decode()
+            if j in self.players:
+                ind = self.players.index(j)
+                print('robot: {}  etape: {}  en route vers: {}'.format(j, etape, scenario[self.progression[ind]]))
+                if etape == scenario[self.progression[ind]]:
+                    tim = self.chrono.get_text()
+                    self.etapes[ind][self.progression[ind]].set_text(tim)
+                    self.progression[ind] += 1
+                    if self.progression[ind] == len(scenario):
+                        self.start_stop(None)
+                        alert = plt.figure(figsize=(4.5, 2), facecolor='g')
+                        alert.text(0.1, 0.5, robot_list[j-1] + " vainqueur !" , fontsize=26, color='w', va='center')
         return
 
     def start_stop(self, event):
@@ -199,4 +191,4 @@ class master():
 if __name__ == '__main__':
     m = master()
     # m = master(port='COM10')
-    # m = master(port='/dev/cu.usbmodem14201')
+    # m = master(port='/dev/cu.usbmodem14101')
