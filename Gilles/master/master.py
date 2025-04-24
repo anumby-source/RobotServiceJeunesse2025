@@ -30,7 +30,7 @@ class master():
         self.create_buttons()
         self.create_check_buttons()
         plt.tight_layout()
-        plt.show()
+        plt.show(block=True)
 
     def create_chrono(self):
         ''' Create chrono timer and display '''
