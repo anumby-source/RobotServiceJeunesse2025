@@ -80,8 +80,11 @@ class master():
         if self.ser.in_waiting:
             msg = self.ser.read(self.ser.in_waiting).strip()
             print(msg)
-            j, etape = msg.split(b':')
-            j, etape = int(j), etape.decode()
+            try:
+                j, etape = msg.split(b':')
+                j, etape = int(j), etape.decode()
+            except:
+                return
             if j in self.players:
                 ind = self.players.index(j)
                 print('robot: {}  etape: {}  en route vers: {}'.format(j, etape, scenario[self.progression[ind]]))
@@ -93,7 +96,6 @@ class master():
                         self.start_stop(None)
                         alert = plt.figure(figsize=(4.5, 2), facecolor='g')
                         alert.text(0.1, 0.5, robot_list[j-1] + " vainqueur !" , fontsize=26, color='w', va='center')
-        return
 
     def start_stop(self, event):
         ''' Start/Stop button handler '''
